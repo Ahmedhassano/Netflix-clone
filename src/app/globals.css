@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    *{
+        @apply scroll-smooth
+    }
+    *::-webkit-scrollbar {
+       @apply w-1 h-0  
+      }
+      *::-webkit-scrollbar-track {
+       @apply bg-[#d3d3d391] rounded-lg
+      }
+      
+      *::-webkit-scrollbar-thumb {
+        @apply bg-red-600 rounded-lg
+     
+      }
+    input,button{
+       @apply border-none outline-none   
+    }
+
+}
+@layer components{
+    .section-full-screen{
+        @apply w-full min-h-screen
+    }
+    .watch-btn{
+        @apply  bg-red-700 py-2 px-3 rounded-full cursor-pointer
+    }
+    
+    
+    .bg-glass{
+        @apply backdrop-blur-lg bg-[#ffffff1e]
+    }
+   
+}
